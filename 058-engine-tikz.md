@@ -2,7 +2,7 @@
 
 ## Description
 
-The engine inserts the code into a latex-string-template, which is then processed by LaTeX (and ImageMagick `convert` if `fig.ext` is not `pdf`).
+The engine inserts the code into a latex-string-template, which is then processed by LaTeX (and the **magick** package if `fig.ext` is not `pdf`).
 
 ## Options
 
@@ -32,7 +32,7 @@ An example of the tikz-engine from <https://raw.github.com/sdiehl/cats/master/mi
 ```
 
 
-![Funky tikz](http://db.yihui.name/knitr-examples/figure/058-engine-tikz-tikz-ex-1.png)
+![Funky tikz](https://db.yihui.org/knitr-examples/figure/058-engine-tikz-tikz-ex-1.png)
 
 ## Tips
 

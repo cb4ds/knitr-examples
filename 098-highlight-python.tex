@@ -1,6 +1,6 @@
 \documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
 \def\maxwidth{ %
   \ifdim\Gin@nat@width>\linewidth
@@ -60,13 +60,18 @@ Syntax highlighting also works for other languages in the \LaTeX{} or HTML outpu
 \noindent
 \ttfamily
 \hlstd{x\ }\hlopt{=\ }\hlstd{}\hlstr{'hello,\ python\ world!'}\hlstd{}\hspace*{\fill}\\
-\hlkwa{print\ }\hlstd{x}\hspace*{\fill}\\
-\hlkwa{print\ }\hlstd{x}\hlopt{.}\hlstd{}\hlkwd{split}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'\ '}\hlstd{}\hlopt{)}\hlstd{}\hspace*{\fill}
+\hlkwa{print}\hlstd{}\hlopt{(}\hlstd{x}\hlopt{)}\hlstd{}\hspace*{\fill}
 \mbox{}
 \normalfont
-
 \begin{verbatim}
 ## hello, python world!
+\end{verbatim}
+\noindent
+\ttfamily
+\hlstd{}\hlkwa{print}\hlstd{}\hlopt{(}\hlstd{x}\hlopt{.}\hlstd{}\hlkwd{split}\hlstd{}\hlopt{(}\hlstd{}\hlstr{'\ '}\hlstd{}\hlopt{))}\hlstd{}\hspace*{\fill}
+\mbox{}
+\normalfont
+\begin{verbatim}
 ## ['hello,', 'python', 'world!']
 \end{verbatim}
 \end{kframe}

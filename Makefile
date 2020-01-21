@@ -9,6 +9,7 @@ pandoc:
 	Rscript 084-pandoc.R && Rscript 088-pandoc-embedded.R
 
 deps:
+	tlmgr install pgf preview xcolor beamer translator;\
 	Rscript -e "for (i in readLines('R-packages'))" \
 	-e "if (!require(i, character.only=TRUE)) install.packages(i, repos='http://cran.rstudio.com')" \
 	-e "update.packages(.libPaths(), instlib = .libPaths()[1], ask = FALSE, repos = 'http://cran.rstudio.com')"
@@ -27,13 +28,11 @@ mydeps2:
 	sudo apt-get purge ghc graphviz coffeescript asymptote scala
 	sudo apt-get autoremove
 
-xvfb-%:
-	sh -e /etc/init.d/xvfb $*
-
 diff:
 	git diff
 	git status
-	git checkout -- 009-*.md 010-*.md 021-*.tex 101-*.md 051-*.tex 059-*.tex  # ignore these differences
+	git checkout -- 009-*.md 010-*.md 021-*.tex 046-*.md 101-*.md 051-*.tex 059-*.tex 093-*.md 106-*.md  # ignore these differences
+	git status
 	[ -z "$$(git diff)" ] || exit 1
 
 clean:

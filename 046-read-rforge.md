@@ -52,10 +52,10 @@ rgl.demo.subdivision <- function() {
     
     common <- c(alpha = 0.5)
     
-    part(0, -5.5, color = "blue", common)
-    part(1, -1.75, color = "yellow", common)
-    part(2, 1.75, color = "red", common)
-    part(3, 5.5, color = "green", common)
+    part(0, -5.5, color = "blue")
+    part(1, -1.75, color = "yellow")
+    part(2, 1.75, color = "red")
+    part(3, 5.5, color = "green")
     
 }
 
@@ -79,4 +79,4 @@ open3d()
 rgl.demo.subdivision()
 ```
 
-![plot of chunk rgl-sub](http://db.yihui.name/knitr-examples/figure/046-read-rforge-rgl-sub-1.png)
+![plot of chunk rgl-sub](https://db.yihui.org/knitr-examples/figure/046-read-rforge-rgl-sub-1.png)

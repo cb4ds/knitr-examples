@@ -17,11 +17,17 @@ Does **knitr** work with Python? Use the chunk option `engine='python'`:
 ```python
 x = 'hello, python world!'
 print(x)
-print(x.split(' '))
 ```
 
 ```
 ## hello, python world!
+```
+
+```python
+print(x.split(' '))
+```
+
+```
 ## ['hello,', 'python', 'world!']
 ```
 
@@ -57,6 +63,9 @@ or `echo=FALSE` (hide source code):
 
 ```
 ## hello, python world!
+```
+
+```
 ## ['hello,', 'python', 'world!']
 ```
 
@@ -66,6 +75,9 @@ or `results='hide'`:
 ```python
 x = 'hello, python world!'
 print(x)
+```
+
+```python
 print(x.split(' '))
 ```
 
@@ -73,9 +85,8 @@ or `results='asis'`:
 
 
 ```python
-print '**Write** _something_ in `Markdown` from `Python`!'
+print('**Write** _something_ in `Markdown` from `Python`!')
 ```
-
 
 **Write** _something_ in `Markdown` from `Python`!
 
@@ -105,7 +116,9 @@ Now see how the output is changed:
 
     x = 'hello, python world!'
     print(x)
-    print(x.split(' '))
 
     ## hello, python world!
+
+    print(x.split(' '))
+
     ## ['hello,', 'python', 'world!']
